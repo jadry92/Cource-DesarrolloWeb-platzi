@@ -1,0 +1,55 @@
+/* tipoDeSelector {
+    parametro1: valor1;
+    parametro2: valor2;
+} */
+
+/* selector universal */
+* {
+    border: 1px solid red;
+    margin: 10px
+}
+
+/* selector de etiqueta */
+header {
+    background: rgb(1,200,200);
+}
+
+section {
+    background: rgb(25,0,255);
+}
+
+/* selector decendente  */
+
+article h3 {
+    color: green;
+}
+
+
+/* selector de clase */
+
+.articulos{
+    background: rgb(0,50,0);
+}
+
+.title-a{
+    background: rgb(255,10,0);
+}
+
+.title-b{
+    background: rgb(155,1,200);
+}
+
+/* selector de id */
+#header{
+    border: 3px solid black;
+}
+
+#portada{
+    border: 3px solid brown;
+}
+
+#guitarras{
+    border: 3px solid yellow;
+}
+
+titulo
