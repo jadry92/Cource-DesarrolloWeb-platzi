@@ -2,18 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Invie - tus mejores guitarras !!</title>
+        <title>Precios de tus mejores guitarras !!</title>
         <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
         <link rel="stylesheet" href="css/invie.css">
-        <!-- <style media="screen">
-            body {
-                background: blue
-            }
-        </style> -->
     </head>
     <body>
-        <section id="portada" class="portada background"><!-- portada -->
-            <header id="header" class="header contenerdor"> <!-- header  style="background: red"-->
+        <header id="header" class="header background"> <!-- header  style="background: red"-->
+            <div class="contenerdor">                
                 <figure class="logo-tipo"> <!-- logo tipo -->
                     <img src="images/invie.png" width="168" height="60" alt="Invie Logotipo"/>
                 </figure>
@@ -26,42 +21,43 @@
                             <a href="precios.html">Precios</a>
                         </li>
                         <li>
-                            <a href="#guitarras">Guitarras</a>
+                            <a href="index.html#guitarras">Guitarras</a>
                         </li>
                     </ul>
                 </nav>
-            </header>
+            </div>
+        </header>
+        <section class="tabla">
             <div class="contenerdor">
-                <h1 class="titulo">Guitarras <span>Invie</span>sibles</h1><!-- titulo -->
-                <h3 class="title-a">Sé la estrella de rock que siempre quisite ser</h3><!-- resumen -->
-                <a class="button" href="#guitarras" >Conoce más</a><!-- boton -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>modelo</th>
+                            <th>precio</th>
+                            <th>descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Invie classic</td>
+                            <td>$100000</td>
+                            <td>asjdkjabsd jkahsd haskjhdk jashdkjashdk  jshd</td>
+                        </tr>
+                        <tr>
+                            <td>Invie classic</td>
+                            <td>$100000</td>
+                            <td>asjdkjabsd jkahsd haskjhdk jashdkjashdk  jshd</td>
+                        </tr>
+                        <tr>
+                            <td>Invie classic</td>
+                            <td>$100000</td>
+                            <td>asjdkjabsd jkahsd haskjhdk jashdkjashdk  jshd</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
-        <section id="guitarras" class="guitarras contenerdor"><!-- guitarras -->
-            <h2>Nuestras guitarras</h2><!-- titulo -->
-            <article class="guitarra">
-                <img class="right" src="images/invie-acustica.png" alt="Guitarra Acústica" width="350"/>
-                <div class="contenerdor-guitarra-a">
-                    <h3 class="title-b">Invie Acústica</h3>
-                    <ol>
-                        <li>Estilo vintage</li>
-                        <li>Madera pura</li>
-                        <li>Incluye estuche invisible de aluminio</li>
-                    </ol>
-                </div>
-            </article>
-            <article class="guitarra">
-                <img class="left" src="images/invie-classic.png" alt="Guitarra Clasicc" width="350">
-                <div class="contenerdor-guitarra-b">
-                    <h3 class="title-c">Invie Clasicc</h3>
-                    <ol>
-                        <li>Estilo vintage</li>
-                        <li>Liviana</li>
-                        <li>Inicia tu camino como Rockstar</li>
-                    </ol>
-                </div>
-            </article>
-        </section>
+
         <footer class="footer">
             <div class="contenerdor">
                 <div class="contacto">
@@ -104,7 +100,7 @@
                     <div class="col2">
                         <label for="comentarios">Comentarios</label>
                         <textarea name="Comentarios" rows="5" cols="20"></textarea>
-                        <input class="button" type="submit" name="enviar" value="enviar">
+                        <input type="submit" name="enviar" value="enviar">
                     </div>
                 </form>
             </div>

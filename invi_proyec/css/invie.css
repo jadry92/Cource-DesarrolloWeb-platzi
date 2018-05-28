@@ -10,11 +10,51 @@ body{
     font-family: 'Allerta', sans-serif;
 }
 
+table {
+    width: 100%;
+}
+
+th {
+    background: #273b47;
+    color: white;
+}
+
+th {
+    padding: 10px 20px;
+    text-align: left;;
+}
+
+td {
+    padding: 20px;
+}
+
+table , td , th {
+    border: 1px solid #273b47;
+    border-collapse: collapse;
+}
+
+input , textarea {
+    outline: none;
+}
+
+input:focus , textarea:focus {
+    background: lightgray;
+}
+
+.background {
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
+
 .titulo{
     font-family: 'Montserrat', sans-serif;
     font-size: 70px;
     margin-bottom: 15px;
     margin-top: 70px;
+}
+
+.titulo span{
+    text-decoration: underline;
 }
 
 .title-a{
@@ -38,7 +78,7 @@ body{
     /* overflow: hidden; */
     border: solid 1px #1F313C;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 10px 40px 10px;
     border-radius: 8px;
     position: relative;
 }
@@ -50,18 +90,21 @@ body{
 }
 
 .portada{
-    background-image: url("../images/background.png");
     color: white;
     padding: 20px;
+    height: 500px
 }
 
-.portada button{
-    border-radius: 8px;
+.button{
+    border-radius: 12px;
     border: none;
     background: #FD324E;
     color: white;
-    padding: 7px;
-    margin-bottom: 70px;
+    padding: 7px 12px;
+    cursor: pointer;
+    margin-bottom: 18px;
+    background: linear-gradient(to left, #fe344e, #ff7250);
+    text-decoration: none;
 }
 
 .menu{
@@ -77,13 +120,31 @@ body{
     margin-left: 30px;
 }
 
+.menu li:before{
+    content: '°';
+    font-size: 50px;
+    line-height: 20px;
+    color: white;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
 .logo-tipo {
     display: inline-block;
+    margin-left: 0;
 }
 
 .contenerdor{
     margin: auto;
     width: 800px;
+    position: relative;
+}
+
+.guitarras {
+    margin-bottom: 90px;
 }
 
 .right{
@@ -114,4 +175,77 @@ body{
 
 .header{
     position: relative;
+}
+
+.footer{
+    background: #273b47;
+    padding: 50px 10px;
+}
+
+.contacto{
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contacto img{
+    display: block;
+}
+
+.contacto strong{
+    display: block;
+}
+
+.contacto a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 10px 10px 0px;
+}
+
+.footer .contenerdor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario{
+    display: flex;
+    width: 400px;
+}
+
+.col1 , .col2{
+    display: flex;
+    flex-direction: column;
+}
+
+.col1 {
+    margin-right: 15px;
+}
+
+.col2 {
+    align-items: flex-start;
+}
+
+.col2 .button{
+    margin-top: 15px;
+}
+
+.interese label{
+    font-size: 14px;
+}
+
+.formulario {
+    color: white;
+}
+
+.formulario label, .sexo, .interese{
+    margin-bottom: 10px;
+}
+
+.sexo {
+    margin-top: 10px
+}
+
+.tabla {
+    margin: 50px;
 }
